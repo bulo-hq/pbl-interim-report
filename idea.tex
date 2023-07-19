@@ -2,11 +2,11 @@
 
 \section{コンセプト}
 BuLoはバスに乗り遅れたくないひとのためのバスロケーションアプリである．従来のバスロケーションアプリやGoogle Mapsなどの地図アプリとは異なり，バスの位置や遅延情報をリアルタイムにわかりやすく把握することができる．また，“ひとめぼれ”するバスロケーションアプリをめざしている．本グループは”ひとめぼれ”を以下の2つと考える．まず1つ目にアプリのデザインに対する”ひとめぼれ”である．これはアプリを使うきっかけとなるものである．2つ目にアプリ全体を通しての体験への”ひとめぼれ”である．これは，アプリを使い続けるきっかけになると考える．
-\bunseki{大津武琉}
+\bunseki{及川寛太}
 
 \section{機能}
 \subsection{住所を登録}
-このアプリの対象ユーザは通勤・通学にバスを利用する人であるため，自宅と職場の住所を登録する機能を搭載する．対象ユーザの使用するルートは変わらないため，最初に登録することで，2回目以降は検索をする手間を省いている．
+このアプリの対象ユーザは通勤・通学にバスを利用する人であるため，自宅と職場の住所を登録する機能を搭載する．対象ユーザの使用するルートは変わらないため，最初に登録することで，2回目以降は検索をする手間を省いている．図中の左から2枚目の画面では現在地の住所を表示させている．左から3枚目の画面では「はこだて」と入力して，それに対しての予測を表示させている．
 
 \begin{figure}[htbp]
     \centering
@@ -14,9 +14,20 @@ BuLoはバスに乗り遅れたくないひとのためのバスロケーショ�
     \caption{住所登録機能}
     \label{fig:feature_registration}
 \end{figure}
-
+\pagebreak
 \subsection{Time-Distance View}
-これは人とバス，バス停の距離を時間的グラフに表すことでパッとみてユーザとバスの位置関係を把握することができる．実装方法は以下の図に示す．
+これは人とバス，バス停の距離を時間的グラフに表すことでパッとみてユーザとバスの位置関係を把握することができる．実装方法は図3.2に示す．図3.2では以下の状況を考えている．
+
+\begin{quote}
+    \begin{itemize}
+        \item 目的地は職場
+        \item 現在地からの最寄りのバス停は亀田支所前
+        \item 乗るバスは55G
+        \item 最寄りバス停から目的地付近のバス停までの料金は220円
+        \item バスが5分後に亀田支所前に到着
+        \item 亀田支所前まで歩きで3分
+    \end{itemize}
+\end{quote}
 
 \begin{figure}[htbp]
     \centering
@@ -24,14 +35,14 @@ BuLoはバスに乗り遅れたくないひとのためのバスロケーショ�
     \caption{Time-Distance View}
     \label{fig:feature_timedistanceview}
 \end{figure}
-
+\pagebreak
 \subsection{バスの位置情報}
 地図上でバスとユーザの位置を確認することができる．
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=4cm]{images/feature_routeview.png}
+    \includegraphics[width=6cm]{images/feature_routeview.png}
     \caption{バス位置情報閲覧機能}
     \label{fig:feature_routeview}
 \end{figure}
-\bunseki{大津武琉}
+\bunseki{下村蒔里萌}
